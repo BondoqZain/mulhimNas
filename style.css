@@ -1,4 +1,5 @@
-html {
+html,
+body {
   margin: 0;
 }
 .container {
@@ -17,6 +18,10 @@ nav {
   display: flex;
   margin-right: 10px;
   flex-direction: row-reverse;
+}
+
+.nav-list img {
+  padding: 10px;
 }
 
 .nav-list ul {
@@ -62,5 +67,66 @@ nav {
   background-color: #eef0fb;
   border-radius: 50%;
   padding: 10px;
-  color: #3A4E8F;
+  color: #3a4e8f;
+}
+
+main {
+  background: linear-gradient(
+    0deg,
+    #0e1733 100%,
+    rgba(14, 23, 51, 0.4) 40%,
+    #0e1733 100%
+  );
+}
+
+.hero {
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.hero .intro h1 {
+  font-family: Montserrat Alternates;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 96px;
+  line-height: 91.2px;
+  letter-spacing: -2.4px;
+  color: #f98603;
+}
+
+.hero .intro .intro-artical {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 33.6px;
+  letter-spacing: 0.07px;
+  color: #fff;
+}
+
+.hero .intro .explore {
+  border-radius: 48px;
+  color: #000;
+  border: none;
+  background-color: #fff;
+  padding: 15px;
+  margin: 20px 0;
+  font-family: Montserrat Alternates;
+}
+
+.images {
+  display: flex;
+}
+.images img {
+  margin: 0 10px 10px 10px;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
 }
