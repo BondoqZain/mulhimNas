@@ -300,3 +300,55 @@ footer a {
   text-align: center;
   margin-top: 20px;
 }
+
+.faq {
+  padding: 80px 20px;
+  color: #fff;
+  font-family: Montserrat Alternates;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-container h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #9fb0d1;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+}
+
+summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.faq-item p {
+  margin-top: 15px;
+  color: #cfd7ef;
+  line-height: 1.6;
+}
