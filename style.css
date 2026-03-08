@@ -329,7 +329,6 @@ footer a {
 }
 
 summary {
-  cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   list-style: none;
@@ -343,12 +342,3 @@ summary::after {
   transition: 0.3s;
 }
 
-details[open] summary::after {
-  transform: rotate(180deg);
-}
-
-.faq-item p {
-  margin-top: 15px;
-  color: #cfd7ef;
-  line-height: 1.6;
-}
