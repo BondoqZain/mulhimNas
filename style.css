@@ -70,7 +70,8 @@ nav {
   color: #3a4e8f;
 }
 
-main {
+main,
+footer {
   background: linear-gradient(
     0deg,
     #0e1733 100%,
@@ -208,10 +209,14 @@ main {
   letter-spacing: 0.4px;
   text-align: center;
 }
+
 .vision h1,
 .mission h1 {
   justify-items: center;
   text-align: center;
+}
+.mission h2 {
+  margin-bottom: 0;
 }
 .statistics {
   display: flex;
@@ -228,4 +233,70 @@ main {
 }
 .statistics-card p {
   font-family: Montserrat Alternates;
+}
+footer {
+  justify-content: space-evenly;
+  border-top: 1px solid rgba(128, 128, 128, 0.392);
+  padding-top: 30px;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+.upper-footer {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+footer p {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: -0.31px;
+  color: #ffffff80;
+}
+footer a {
+  color: #ffffff80;
+  gap: 2rem;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.menu span {
+  font-family: Montserrat Alternates;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1.95px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.menu ul {
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.menu ul li {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+  text-transform: capitalize;
+  list-style: none;
+  margin: 10px auto;
+  text-align: left;
+  color: #ffffff80;
+}
+.rights {
+  text-align: center;
+  margin-top: 20px;
 }
