@@ -1,3 +1,25 @@
+:root {
+  --white: #ffffff;
+  --white-muted: #ffffff80;
+
+  --primary: #3a4e8f;
+  --primary-light: #eef0fb;
+
+  --accent: #f98603;
+  --accent-dark: #c26702;
+
+  --bg-main: #0e1733;
+  --bg-dark: #060a16;
+  --bg-card: #03091b;
+
+  --border: #212f5a;
+  --divider: #80808064;
+  --border-light: #ffffff1a;
+
+  --text-subtitle: #9fb0d1;
+  --text-secondary: #b1b9c6;
+}
+
 html,
 body {
   margin: 0;
@@ -11,7 +33,7 @@ nav {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .nav-list {
@@ -41,7 +63,7 @@ nav {
   text-align: right;
 }
 .nav-list ul li:active {
-  color: #f98603;
+  color: var(--accent);
 }
 .login {
   display: flex;
@@ -50,9 +72,9 @@ nav {
   gap: 1rem;
 }
 .login-btn {
-  background-color: #3a4e8f;
+  background-color: var(--primary);
   border: none;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
   font-family: Almarai;
   line-height: 114.99999999999999%;
@@ -64,10 +86,10 @@ nav {
   border-radius: 20px;
 }
 .basket i {
-  background-color: #eef0fb;
+  background-color: var(--primary-light);
   border-radius: 50%;
   padding: 10px;
-  color: #3a4e8f;
+  color: var(--primary);
 }
 
 main,
@@ -97,7 +119,7 @@ footer {
   font-size: 96px;
   line-height: 91.2px;
   letter-spacing: -2.4px;
-  color: #f98603;
+  color: var(--accent);
 }
 
 .intro .intro-artical {
@@ -107,14 +129,14 @@ footer {
   font-size: 24px;
   line-height: 33.6px;
   letter-spacing: 0.07px;
-  color: #fff;
+  color: var(--white);
 }
 
 .intro .explore {
   border-radius: 48px;
   color: #000;
   border: none;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 15px;
   margin: 20px 0;
   font-family: Montserrat Alternates;
@@ -136,11 +158,11 @@ footer {
   flex-direction: column;
 }
 .features {
-  background-color: #060a16;
+  background-color: var(--bg-dark);
   padding: 5% 0;
 }
 .section-header h1 {
-  color: #fff;
+  color: var(--white);
   font-family: Montserrat Alternates;
   font-weight: 700;
   font-style: Bold;
@@ -153,7 +175,7 @@ footer {
   font-style: Regular;
   line-height: 28px;
   letter-spacing: -0.45px;
-  color: #fff;
+  color: var(--white);
 }
 .cards {
   display: flex;
@@ -169,12 +191,12 @@ footer {
 }
 .card,
 .instructor-card h3 {
-  color: #fff;
+  color: var(--white);
   font-family: Montserrat Alternates;
   letter-spacing: 0.09px;
 }
 .card p {
-  color: #c26702;
+  color: var(--accent-dark);
   font-family: Montserrat Alternates;
   font-size: 14px;
   letter-spacing: -0.15px;
@@ -186,7 +208,7 @@ footer {
   margin: 10px;
 }
 .instructor-card p {
-  color: #fff;
+  color: var(--text-secondary);
   font-family: Montserrat Alternates;
   font-weight: 400;
   font-size: 14px;
@@ -205,7 +227,7 @@ footer {
   font-weight: 400;
   font-style: Regular;
   font-size: 30px;
-  color: #fff;
+  color: var(--white);
   letter-spacing: 0.4px;
   text-align: center;
 }
@@ -221,7 +243,7 @@ footer {
 .statistics {
   display: flex;
   justify-content: space-evenly;
-  color: #fff;
+  color: var(--white);
   text-align: center;
 }
 .statistics-card h1 {
@@ -236,7 +258,7 @@ footer {
 }
 footer {
   justify-content: space-evenly;
-  border-top: 1px solid rgba(128, 128, 128, 0.392);
+  border-top: 1px solid var(--divider);
   padding-top: 30px;
 }
 footer .container {
@@ -246,7 +268,7 @@ footer .container {
 .upper-footer {
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.392);
+  border-bottom: 1px solid var(--divider);
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -256,10 +278,10 @@ footer p {
   font-size: 16px;
   line-height: 27.2px;
   letter-spacing: -0.31px;
-  color: #ffffff80;
+  color: var(--white-muted);
 }
 footer a {
-  color: #ffffff80;
+  color: var(--white-muted);
   gap: 2rem;
 }
 
@@ -276,7 +298,7 @@ footer a {
   line-height: 20px;
   letter-spacing: 1.95px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
 }
 .menu ul {
   padding: 0;
@@ -286,7 +308,6 @@ footer a {
 .menu ul li {
   font-family: Montserrat Alternates;
   font-weight: 400;
-  font-style: Regular;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.15px;
@@ -294,7 +315,7 @@ footer a {
   list-style: none;
   margin: 10px auto;
   text-align: left;
-  color: #ffffff80;
+  color: var(--white-muted);
 }
 .rights {
   text-align: center;
@@ -303,7 +324,7 @@ footer a {
 
 .faq {
   padding: 80px 20px;
-  color: #fff;
+  color: var(--white);
   font-family: Montserrat Alternates;
 }
 
@@ -318,13 +339,13 @@ footer a {
 }
 
 .subtitle {
-  color: #9fb0d1;
+  color: var(--text-subtitle);
   margin-bottom: 50px;
   font-size: 18px;
 }
 
 .faq-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--border-light);
   padding: 20px 0;
 }
 
@@ -343,7 +364,7 @@ summary::after {
 }
 
 .stories {
-  color: #fff;
+  color: var(--white);
   display: flex;
 }
 
@@ -354,24 +375,24 @@ summary::after {
   font-size: 72px;
   line-height: 72px;
   letter-spacing: -1.68px;
-  color: #fff;
+  color: var(--white);
 }
 .student-stories-header p {
   font-family: Montserrat Alternates;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #b1b9c6;
+  color: var(--text-secondary);
 }
 .story {
-  background-color: #03091B;
-  border: 1px solid #212f5a;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 15px;
   margin: 10px;
   padding: 30px;
 }
 .stars i {
-  color: #f98603;
+  color: var(--accent);
 }
 
 .author {
