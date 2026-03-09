@@ -24,6 +24,7 @@ html,
 body {
   margin: 0;
 }
+
 .container {
   width: 75%;
   margin: auto;
@@ -62,15 +63,18 @@ nav {
   letter-spacing: 0px;
   text-align: right;
 }
+
 .nav-list ul li:active {
   color: var(--accent);
 }
+
 .login {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   gap: 1rem;
 }
+
 .login-btn {
   background-color: var(--primary);
   border: none;
@@ -80,11 +84,10 @@ nav {
   line-height: 114.99999999999999%;
   letter-spacing: 0%;
   vertical-align: middle;
-  width: 14;
-  height: 14;
   opacity: 1;
   border-radius: 20px;
 }
+
 .basket i {
   background-color: var(--primary-light);
   border-radius: 50%;
@@ -94,12 +97,10 @@ nav {
 
 main,
 footer {
-  background: linear-gradient(
-    0deg,
-    #0e1733 100%,
-    rgba(14, 23, 51, 0.4) 40%,
-    #0e1733 100%
-  );
+  background: linear-gradient(0deg,
+      #0e1733 100%,
+      rgba(14, 23, 51, 0.4) 40%,
+      #0e1733 100%);
 }
 
 .hero {
@@ -110,6 +111,9 @@ footer {
 
 .hero .container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
 }
 
 .orange-big-text {
@@ -145,9 +149,11 @@ footer {
 .images {
   display: flex;
 }
+
 .images img {
   margin: 0 10px 10px 10px;
 }
+
 .col1 {
   display: flex;
   flex-direction: column;
@@ -157,10 +163,12 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .features {
   background-color: var(--bg-dark);
   padding: 5% 0;
 }
+
 .section-header h1 {
   color: var(--white);
   font-family: Montserrat Alternates;
@@ -170,6 +178,7 @@ footer {
   line-height: 72px;
   letter-spacing: -1.68px;
 }
+
 .section-header p {
   font-family: Montserrat Alternates;
   font-style: Regular;
@@ -177,40 +186,48 @@ footer {
   letter-spacing: -0.45px;
   color: var(--white);
 }
+
 .cards {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 .card {
   margin: 10px;
   flex: 1 1 250px;
 }
+
 .card img {
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
+
 .card,
 .instructor-card h3 {
   color: var(--white);
   font-family: Montserrat Alternates;
   letter-spacing: 0.09px;
 }
+
 .card p {
   color: var(--accent-dark);
   font-family: Montserrat Alternates;
   font-size: 14px;
   letter-spacing: -0.15px;
 }
+
 .instructors .cards {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .instructor-card {
   margin: 10px;
-  flex: 1 1;
+  flex: 1 1 200px;
 }
+
 .instructor-card p {
   color: var(--text-secondary);
   font-family: Montserrat Alternates;
@@ -218,13 +235,16 @@ footer {
   font-size: 14px;
   letter-spacing: -0.15px;
 }
+
 .instructor-card img {
   width: 100%;
   overflow: hidden;
 }
+
 .vision {
   margin-top: 150px;
 }
+
 .vision h2,
 .mission h2 {
   font-family: Montserrat Alternates;
@@ -241,9 +261,11 @@ footer {
   justify-items: center;
   text-align: center;
 }
+
 .mission h2 {
   margin-bottom: 0;
 }
+
 .statistics {
   display: flex;
   flex-wrap: wrap;
@@ -251,9 +273,11 @@ footer {
   color: var(--white);
   text-align: center;
 }
+
 .statistics-card {
   flex: 1 1 250px;
 }
+
 .statistics-card h1 {
   font-family: Montserrat Alternates;
   font-size: 50px;
@@ -261,73 +285,9 @@ footer {
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .statistics-card p {
   font-family: Montserrat Alternates;
-}
-footer {
-  justify-content: space-evenly;
-  border-top: 1px solid var(--divider);
-  padding-top: 30px;
-}
-footer .container {
-  display: flex;
-  flex-direction: column;
-}
-.upper-footer {
-  display: flex;
-  justify-content: space-evenly;
-  border-bottom: 1px solid var(--divider);
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-footer p {
-  font-family: Montserrat Alternates;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27.2px;
-  letter-spacing: -0.31px;
-  color: var(--white-muted);
-}
-footer a {
-  color: var(--white-muted);
-  gap: 2rem;
-}
-
-.menu {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-}
-.menu span {
-  font-family: Montserrat Alternates;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 1.95px;
-  text-transform: uppercase;
-  color: var(--white);
-}
-.menu ul {
-  padding: 0;
-  margin-bottom: 15px;
-  text-align: left;
-}
-.menu ul li {
-  font-family: Montserrat Alternates;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.15px;
-  text-transform: capitalize;
-  list-style: none;
-  margin: 10px auto;
-  text-align: left;
-  color: var(--white-muted);
-}
-.rights {
-  text-align: center;
-  margin-top: 20px;
 }
 
 .faq {
@@ -386,6 +346,7 @@ summary::after {
   letter-spacing: -1.68px;
   color: var(--white);
 }
+
 .student-stories-header p {
   font-family: Montserrat Alternates;
   font-weight: 400;
@@ -393,6 +354,7 @@ summary::after {
   line-height: 28px;
   color: var(--text-secondary);
 }
+
 .story {
   background-color: var(--bg-card);
   border: 1px solid var(--border);
@@ -401,6 +363,7 @@ summary::after {
   padding: 30px;
   flex: 1 1 250px;
 }
+
 .stars i {
   color: var(--accent);
 }
@@ -410,15 +373,94 @@ summary::after {
   align-items: center;
   gap: 1rem;
 }
+
 .author img {
   justify-items: center;
 }
 
+footer {
+  justify-content: space-evenly;
+  border-top: 1px solid var(--divider);
+  padding-top: 30px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: -0.31px;
+  color: var(--white-muted);
+}
+
+footer a {
+  color: var(--white-muted);
+  gap: 2rem;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.menu span {
+  font-family: Montserrat Alternates;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1.95px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.menu ul {
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.menu ul li {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+  text-transform: capitalize;
+  list-style: none;
+  margin: 10px auto;
+  text-align: left;
+  color: var(--white-muted);
+}
+
+.rights {
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 768px) {
+
   /* CSS styles applied when the screen width is 768 pixels or less */
   .nav-list ul {
     display: none;
   }
+
   .hero .intro,
   .hero .images,
   .hero .container {
