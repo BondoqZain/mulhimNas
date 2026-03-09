@@ -180,9 +180,11 @@ footer {
 .cards {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .card {
   margin: 10px;
+  flex: 1 1 250px;
 }
 .card img {
   width: 100%;
@@ -203,9 +205,11 @@ footer {
 }
 .instructors .cards {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .instructor-card {
   margin: 10px;
+  flex: 1 1;
 }
 .instructor-card p {
   color: var(--text-secondary);
@@ -242,9 +246,13 @@ footer {
 }
 .statistics {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   color: var(--white);
   text-align: center;
+}
+.statistics-card {
+  flex: 1 1 250px;
 }
 .statistics-card h1 {
   font-family: Montserrat Alternates;
@@ -366,6 +374,7 @@ summary::after {
 .stories {
   color: var(--white);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .student-stories-header h1 {
@@ -390,6 +399,7 @@ summary::after {
   border-radius: 15px;
   margin: 10px;
   padding: 30px;
+  flex: 1 1 250px;
 }
 .stars i {
   color: var(--accent);
@@ -402,4 +412,16 @@ summary::after {
 }
 .author img {
   justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS styles applied when the screen width is 768 pixels or less */
+  .nav-list ul {
+    display: none;
+  }
+  .hero .intro,
+  .hero .images,
+  .hero .container {
+    display: block;
+  }
 }
