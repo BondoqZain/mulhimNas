@@ -97,10 +97,12 @@ nav {
 
 main,
 footer {
-  background: linear-gradient(0deg,
-      #0e1733 100%,
-      rgba(14, 23, 51, 0.4) 40%,
-      #0e1733 100%);
+  background: linear-gradient(
+    0deg,
+    #0e1733 100%,
+    rgba(14, 23, 51, 0.4) 40%,
+    #0e1733 100%
+  );
 }
 
 .hero {
@@ -362,6 +364,7 @@ summary::after {
   margin: 10px;
   padding: 30px;
   flex: 1 1 250px;
+  font-family: Montserrat Alternates;
 }
 
 .stars i {
@@ -376,6 +379,13 @@ summary::after {
 
 .author img {
   justify-items: center;
+}
+.author span {
+  color: var(--text-secondary);
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.15px;
 }
 
 footer {
@@ -455,7 +465,6 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-
   /* CSS styles applied when the screen width is 768 pixels or less */
   .nav-list ul {
     display: none;
